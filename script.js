@@ -36,8 +36,8 @@ function clickedEventHandler(){
 function clickedEventHandlerSwitch(){
     var inputText = textArea.value;
 
-    enterText.innerHTML="Enter UK text below";
-    outputText.innerHTML="Converted US text is below";
+    // enterText.innerHTML="Enter UK text below";
+    // outputText.innerHTML="Converted US text is below";
 
     fetch(getTranslationURl2(inputText))
     .then(response => response.json())

@@ -1,23 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@200&display=swap');
+
 :root{
     --red-color: #E40A0A;
     --blue-color: #01367D;
 }
 
-
-#output{
-    width: 600px;
-    height: 110px;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: auto;
+body{
+    margin: 0px;
+    display: block;
+    text-align: center;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
+    background-image:url(images/background-img.svg);
+    background-position: center;
+    font-size: 1.1rem;
 }
 
 .footer{
     padding: 0.5rem;
     text-align: center;
     color: white;
-    background-color: var(--yellow-color);
+    background-color: #A1A1AA;
 }
 
 .footer .link{
@@ -47,26 +50,71 @@
 }
 
 button{
-    display: block;
+    display: inline;
     padding: 0.8rem;
     font-size: 1rem;
-    margin: 1rem auto;
+    margin: 1rem auto 0.7rem auto;
+    border: 2px solid black;
+    border-radius: 1rem;
 }
 
-header, h3{
+button:hover{
+    background-color: #A1A1AA;
+    cursor: pointer;
+}
+
+#translate-button{
+    margin: 0px 1rem;
+    padding: 0.8rem;
+}
+
+nav, h3{
     text-align: center;
-    padding: 0px;
-    margin: auto;
+}
+
+nav h3{
+    font-style: italic;
+}
+
+.navigation{
+    background-color: #FEE2E2;
+    padding: 0.5rem;
+}
+
+#enter-text{
+    color: aliceblue;
+    padding: 0.5rem;
 }
 
 #text-input{
     margin: 0px 350px  ;
     width: 600px;
-    height: 120px;
+    height: 90px;
     border: 2px solid black;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 20px 0px;
     font-family: inherit;
     text-align: center;
     font-size: 1rem;
+    background-color: aliceblue;
+    opacity: 0.8;
+}
+
+#output{
+    width: 600px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: auto;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: aliceblue;
+    opacity: 0.8;
+}
+
+#output-text{
+    color: aliceblue;
+    padding: 0.5rem;
+    margin-top: 1px;
 }
