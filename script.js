@@ -30,7 +30,7 @@ buttonSwitch.addEventListener("click", () => {
     // enterText.innerHTML="Enter UK text below";
     // outputText.innerHTML="Converted US text is below";
 
-    fetch(getTranslationURl2(serverURl2, inputText))
+    fetch(getTranslationURl(serverURl2, inputText))
     .then(response => response.json())
     .then(json => outputDiv.innerText=json.contents.translated)
     .catch(error => {
