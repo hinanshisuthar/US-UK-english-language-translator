@@ -8,14 +8,6 @@ var outputText = document.querySelector("#output-text");
 var serverURl1 = "https://api.funtranslations.com/translate/us2uk.json";
 var serverURl2 = "https://api.funtranslations.com/translate/uk2us.json";
 
-// function getTranslationURl1(text) {
-//     return serverURl1 + "?" + "text=" + text;
-// }
-
-// function getTranslationURl2(text) {
-//     return serverURl2 + "?" + "text=" + text;
-// }
-
 function getTranslationURl(url, text) {
     return url + "?" + "text=" + text;
 }
@@ -29,7 +21,7 @@ buttontranslate.addEventListener("click", () => {
     .catch(error => {
     console.log("error occured", error)
     alert("something is wrong with the server! try again after some time"); 
-
+})
 });
 
 buttonSwitch.addEventListener("click", () => {
